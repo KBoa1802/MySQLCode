@@ -1,0 +1,4 @@
+SELECT productid, productname, productprice, vendorname
+FROM product as p
+INNER JOIN vendor as v on p.vendorid = v.vendorid
+ORDER BY productid;
