@@ -1,0 +1,4 @@
+SELECT c.categoryid, c.categoryname, AVG(p.productprice)
+FROM category as c
+INNER JOIN product as p on c.categoryid = p.categoryid
+GROUP BY c.categoryid, c.categoryname
