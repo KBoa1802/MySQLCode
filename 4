@@ -1,0 +1,4 @@
+SELECT region.regionid, region.regionname, COUNT store.storeid) as NumOfStores
+FROM region
+INNER JOIN store on region.regionid = store.regionid
+GROUP BY region.regionid, region.regionname;
